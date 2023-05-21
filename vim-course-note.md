@@ -49,6 +49,8 @@ not that useful rather using fuzzy finder
 _ goes to first non space letter in line
 dt<and letter you wanna delete till> delete till the letter you put
 
+cc delete the line and change to insert mode
+
 
 -- plugin--
 
