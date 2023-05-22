@@ -30,6 +30,7 @@ you can load that file with require in another Lua script and get the value 42:]
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
+  use 'mattn/emmet-vim'
 
   use {
   'nvim-telescope/telescope.nvim', tag = '0.1.1',
