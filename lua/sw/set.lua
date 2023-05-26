@@ -32,3 +32,11 @@ vim.opt.updatetime = 50
 
 vim.g.mapleader = " "
 vim.opt.hlsearch = false
+
+vim.api.nvim_exec([[
+  augroup JSON
+    autocmd!
+    autocmd FileType json setlocal foldmethod=indent
+  augroup END
+]], false)
+
