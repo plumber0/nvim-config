@@ -40,3 +40,16 @@ vim.api.nvim_exec([[
   augroup END
 ]], false)
 
+-- settings for emmet----
+-- Equivalent of `let g:user_emmet_install_global = 0`
+vim.g.user_emmet_install_global = 0
+
+-- Equivalent of `autocmd FileType html,css EmmetInstall`
+vim.cmd [[
+  autocmd FileType html,css EmmetInstall
+]]
+
+-- Equivalent of `let g:user_emmet_leader_key='<C-Z>'`
+vim.g.user_emmet_leader_key='<C-M>'
+
+-- settings for emmet----
