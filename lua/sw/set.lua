@@ -40,6 +40,14 @@ vim.api.nvim_exec([[
   augroup END
 ]], false)
 
+vim.api.nvim_exec([[
+  augroup HTML
+    autocmd!
+    autocmd FileType html setlocal foldmethod=indent
+  augroup END
+]], false)
+
+
 -- settings for emmet----
 -- Equivalent of `let g:user_emmet_install_global = 0`
 vim.g.user_emmet_install_global = 0
