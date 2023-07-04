@@ -28,6 +28,14 @@ For example, if you have a Lua file foo.lua with the contents return 42,
 you can load that file with require in another Lua script and get the value 42:]]
 
 return require('packer').startup(function(use)
+    -- install without yarn or npm
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
+
+  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+
   use 'sbdchd/neoformat'
   --sudo apt-get install jq
   use {
